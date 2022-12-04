@@ -63,13 +63,13 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSkipToThePreviousSt(){
+    public void shouldSkipToThePreviousSt() {
         Radio radio = new Radio();
         radio.setCurrentStationNumber(-1);
         radio.prevStationNumber();
         int expected = 9;
         int actual = radio.getCurrentStationNumber();
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -99,6 +99,7 @@ public class RadioTest {
         int actual = radio.getCurrentStationNumber();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSkipToThePreviousStationWithNewStationAmount() {
         Radio radio = new Radio(100);
@@ -110,7 +111,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSkipToThePrevStationWithNewStationAmount(){
+    public void shouldSkipToThePrevStationWithNewStationAmount() {
         Radio radio = new Radio(100);
         radio.setCurrentStationNumber(-1);
         radio.prevStationNumber();
